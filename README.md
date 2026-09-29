@@ -30,12 +30,12 @@ Includes configurable line thickness and braking behavior.
 Gradually increases the robot's speed up to the configured maximum.
 
 # Applications
-🏭 Industrial Automation – Automated movement of robots along predefined factory routes.
+ 1. Industrial Automation – Automated movement of robots along predefined factory routes.
 
-📦 Warehouse Automation – Transportation of materials and packages between designated locations.
+ 2. Warehouse Automation – Transportation of materials and packages between designated locations.
 
-🏥 Hospital Automation – Autonomous transportation of medicines and supplies.
+ 3. Hospital Automation – Autonomous transportation of medicines and supplies.
 
-🏫 Educational Robotics – Learning sensors, motors, embedded systems, and control algorithms.
+ 4. Educational Robotics – Learning sensors, motors, embedded systems, and control algorithms.
 
-🤖 Robotics Competitions – Line-following and autonomous navigation challenges.
+ 5. Robotics Competitions – Line-following and autonomous navigation challenges.
