@@ -10,7 +10,7 @@
 //Enter Line Details
 bool isBlackLine = 1;          //keep 1 in case of black line. In case of white line change this to 0
 unsigned int lineThickness = 15;  //Enter line thickness in mm. Works best for thickness between 10 & 35
-unsigned int numSensors = 7;      // Enter number of sensors as 5 or 7
+unsigned int numSensors = 7;      // Enter number of sensors as 5 or 7 according to sensor being used 
 bool brakeEnabled = 0;
 
 #define AIN1 4
