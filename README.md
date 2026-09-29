@@ -31,7 +31,11 @@ Gradually increases the robot's speed up to the configured maximum.
 
 # Applications
 🏭 Industrial Automation – Automated movement of robots along predefined factory routes.
+
 📦 Warehouse Automation – Transportation of materials and packages between designated locations.
+
 🏥 Hospital Automation – Autonomous transportation of medicines and supplies.
+
 🏫 Educational Robotics – Learning sensors, motors, embedded systems, and control algorithms.
+
 🤖 Robotics Competitions – Line-following and autonomous navigation challenges.
