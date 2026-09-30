@@ -1,33 +1,50 @@
 # Line-Follower-Robot
 
-Built an autonomous line-following robot using 7 IR sensors and PID control to detect and follow black paths on a white surface. Implemented sensor calibration, adaptive speed control, real-time steering correction, and line-loss recovery for accurate navigation.
-
 # Project Overview
 
-The Line-Follower Robot is an autonomous robotic system designed to detect and follow a predefined path using IR sensors. The robot continuously reads the surface through multiple sensors and uses PID-based control to calculate the deviation from the path and adjust the motor speeds accordingly.
+The Line-Follower Robot is an autonomous robotic prototype designed to detect and follow a predefined path using multiple IR-based sensors. The system uses seven IR sensors, automatic sensor calibration, PID-based control logic, adaptive motor speed control, and TB6612 motor-driver interfacing to achieve accurate and stable navigation along a marked path.
 
-The implementation includes sensor calibration, real-time steering correction, adaptive speed control, and line-loss recovery, allowing the robot to follow paths with improved stability and accuracy.
+The robot continuously reads sensor values to determine the position of the line relative to the robot. Based on the detected line position, it calculates the required steering correction and adjusts the speed of the left and right motors accordingly. The system also includes line-loss detection and recovery logic to help the robot regain the path when the line is temporarily lost.
 
-# Technologies / language
-C++ • Arduino • IR Sensors • PID Control • TB6612 Motor Driver
+The project demonstrates the integration of embedded programming, analog sensor processing, automatic calibration, PID control, PWM motor control, real-time path detection, adaptive speed adjustment, and autonomous robotic navigation in a single system.
 
-# What the project actually does
+# Hardware Components
 
-The project includes:
+The project uses the following major hardware components:
 
-7 IR/analog sensors for detecting the line.
-Automatic sensor calibration before operation.
-PID control using:
-Proportional (P)
-Integral (I)
-Derivative (D)
-Dynamically adjusts left and right motor speeds according to the detected error.
-Supports black-line and white-line configurations.
-Supports 5 or 7 sensors through configuration.
-Includes line-loss detection and recovery.
-Uses TB6612 motor control through the SparkFun library.
-Includes configurable line thickness and braking behavior.
-Gradually increases the robot's speed up to the configured maximum.
+Arduino-Compatible Microcontroller
+
+Seven IR/Line Sensors
+
+TB6612FNG Dual Motor Driver
+
+Two DC Motors
+
+Robot Chassis
+
+Wheels
+
+Power Supply / Battery
+
+Connecting Wires
+
+# Programming Languages & Technologies
+C++
+Arduino IDE
+
+# Working Flow
+
+1. Power ON – The robot initializes the IR sensors, motor driver, motors, and control pins before starting operation.
+2. Automatic Calibration – The robot calibrates the sensors by recording their minimum and maximum readings for reliable line detection.
+3. Line Detection – The calibrated sensors continuously detect the position of the line relative to the robot.
+4. Line Position Calculation – Sensor readings are processed to determine whether the line is toward the left, center, or right side of the robot.
+5. Error Calculation – The difference between the detected line position and the desired center position is calculated as the steering error.
+6. PID Control – Proportional, Integral, and Derivative control logic calculates the required correction based on the detected error.
+7. Motor Speed Adjustment – The calculated correction is applied to the left and right motors using PWM to control their individual speeds.
+8. Adaptive Navigation – Motor speed is adjusted according to the line position and required steering correction for smoother movement.
+9. Line-Loss Detection – The robot identifies when the line is temporarily lost and activates the programmed recovery behavior.
+10. Path Recovery – The robot adjusts its movement to search for and regain the detected line.
+11. Continuous Tracking – The robot repeatedly reads the sensors and updates motor control to autonomously follow the predefined path.
 
 # Applications
  1. Industrial Automation – Automated movement of robots along predefined factory routes.
